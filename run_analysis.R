@@ -3,6 +3,11 @@
 # Kevin Bitinsky 2014-12-09
 # Currently not the most efficient method, but follows the instructions by step
 #------------------------------------------------------------------------------
+
+if (!require("reshape2")) {
+  install.packages("reshape2")
+}
+
 require("reshape2")
 
 #assume that the relevant data set exists in working directory ./UCI HAR Dataset
@@ -39,7 +44,7 @@ activities <- activities[,-1] #remove superfluous 'code' variable
 names(subjects) <- "subject"
 names(slimdata) <- features[important_feature_indices, 2]
 names(slimdata) <- gsub("\\(|\\)", "", names(slimdata)) #remove the () in the variables
-names(slimdata) <- gsub("-", " ", names(slimdata)) #remove the - in the variables
+names(slimdata) <- gsub("-", " ", names(slimdata)) #remove the "-" in the variables
 #names(slimdata) <- tolower(names(slimdata)) #to make it 'easier to work with' for rehape
 tidy_data <- cbind(subjects, activities, slimdata)
 
