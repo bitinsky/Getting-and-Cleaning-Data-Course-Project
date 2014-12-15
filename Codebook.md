@@ -1,7 +1,7 @@
 # Codebook
 
-This is the codebook related to the R script *run_analysis.R*.
-It describes the output called *tidy dataset of variable means.txt*
+This is the codebook related to the R script **run_analysis.R**.
+It describes the output called **tidy dataset of variable means.txt**
 
 ## Background Information
 The goal of this script is to prepare tidy data from a larger dataset of accelerometer and gyroscope information from several Galaxy S smartphones.
@@ -22,15 +22,15 @@ Note the the output of this script returns the _mean of each of the below variab
 
 ## Variable description
 The resulting variables are formatted as such:
-1. *subject* - the first variable is the subject's number - no names are used, this is a unique identifier
-2. *activities* - this variable is the activity the subject was performing at the time of the observation
+1. **subject** - the first variable is the subject's number - no names are used, this is a unique identifier
+2. **activities** - this variable is the activity the subject was performing at the time of the observation
 3. The remaining variables are calculations from the accelerometers and gyroscopes and have the format of:
- * the *t* means a _time-domain_ calulcation and *f* is a _frequency-domain_ calculation
- * Body* or *Gravity* indicates the nature of the movement (personal motion or motion induced by gravity)
- * *acc* or *gyro* indicated if the variable is based on informaiton from the _acc_elerometer or the _gyro_scope
- * *X*, *Y*, and *Z* indicate the cartesian direction of the variable.
-* *jerk* is the rate of change of acceleration
-* *mag* is the magnitude of the movement
-* And finally the *mean* or *std* indicates that it is a calculation of the mean or standard deviation of the original variable.
+* the **t** means a _time-domain_ calulcation and **f** is a _frequency-domain_ calculation
+* **Body** or **Gravity** indicates the nature of the movement (personal motion or motion induced by gravity)
+* **acc** or **gyro** indicated if the variable is based on informaiton from the _acc_elerometer or the _gyro_scope
+* **X**, **Y**, and **Z** indicate the cartesian direction of the variable.
+* **jerk** is the rate of change of acceleration
+* **mag** is the magnitude of the movement
+* And finally the **mean** or **std** indicates that it is a calculation of the mean or standard deviation of the original variable.
 
 
