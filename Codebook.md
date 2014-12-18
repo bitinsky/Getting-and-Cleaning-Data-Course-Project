@@ -22,6 +22,7 @@ Note the the output of this script returns the _mean of each of the below variab
 
 ## Variable description
 The resulting variables are formatted as such:
+
 1. **subject** - the first variable is the subject's number - no names are used, this is a unique identifier
 2. **activities** - this variable is the activity the subject was performing at the time of the observation
 3. The remaining variables are calculations from the accelerometers and gyroscopes and have the format of:
