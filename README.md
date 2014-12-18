@@ -4,6 +4,7 @@ to the same folder as this script (run_analysis.R)
 
 ## Function and Output of Script
 Running the script will:
+
 1. merge two datasets (TEST and TRAIN) 
 2. extract data for only the variables related to mean and standard deviation
 3. modifies the data to display the actual activities (not a non-descript code)
