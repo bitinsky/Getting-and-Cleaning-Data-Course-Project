@@ -18,7 +18,7 @@ https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Datas
 ## Script Output
 We are only interested in the _mean_ and _standard deviation_ variables from the raw data. 
 
-Note the the output of this script returns the _mean of each of the below variables_ for each activity and each subject.
+The output of this script returns the _mean of each of the below variables_ for each activity and each subject.  i.e., these are the mean of the mean, or mean of the standard deviation of several variables for each subject and activity.
 
 ## Variable description
 The resulting variables are formatted as such:
