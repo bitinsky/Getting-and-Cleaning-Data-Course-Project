@@ -43,6 +43,29 @@ measured in rad/s
 The Format of the variables is:
 Time/Frequency - Body/Gravity - Accelerometer/Gyroscope - measure - Mean/StandardDev - direction
 
+## Transformations
+1. Combine the TEST and TRAIN dataframes - of the true data. Called _data_
+2. Combine the TEST and TRAIN dataframes - of the activities performed. 
+  Called _activity_
+3. Combine the TEST and TRAIN dataframes - of the subjects being monitored. 
+  Called _subjects_
+4. Read in the names of the features. Called _features_
+5. Read in the names of the activities. Called _activity_labels_
+6. Move the _features_ to be the variable names in _data_
+7. Combine the _data_ with the _subjects_ and _activity_. This is now a single         dataframe.
+8. Select only the mean and standard deviation measurements by grep'ing for 
+  mean() OR std()
+9. Change the activities from a code to a description by merging the 
+  _activity_lables_ into the _data_ by using the **activity_code** as the 
+  primary key.
+10. Update all of the variables so that they are human readible.
+** Add spaces.
+** Expand on the shortened terms or acronymns
+** Change the leading character to:
+*** t = Time domain
+*** f = Fast Fourier Transform (frequency domain)
+
 ## Summary Data
-The resulting data file is a summary of providing the average of each variable for each activity and each subject.
+Melt and recast the dataframe so that the average of each variable for each 
+activity and each subject is calculated.
 
