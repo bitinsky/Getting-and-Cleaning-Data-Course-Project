@@ -59,11 +59,11 @@ Time/Frequency - Body/Gravity - Accelerometer/Gyroscope - measure - Mean/Standar
   _activity_lables_ into the _data_ by using the **activity_code** as the 
   primary key.
 10. Update all of the variables so that they are human readible.
- ** Add spaces.
- ** Expand on the shortened terms or acronymns
- ** Change the leading character to:
- *** t = Time domain
- *** f = Fast Fourier Transform (frequency domain)
+ * Add spaces.
+ * Expand on the shortened terms or acronymns
+ * Change the leading character to:
+  * t = Time domain
+  * f = Fast Fourier Transform (frequency domain)
 
 ## Summary Data
 Melt and recast the dataframe so that the average of each variable for each 
