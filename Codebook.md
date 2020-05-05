@@ -62,8 +62,8 @@ Time/Frequency - Body/Gravity - Accelerometer/Gyroscope - measure - Mean/Standar
  * Add spaces.
  * Expand on the shortened terms or acronymns
  * Change the leading character to:
-  * t = Time domain
-  * f = Fast Fourier Transform (frequency domain)
+   * t = Time domain
+   * f = Fast Fourier Transform (frequency domain)
 
 ## Summary Data
 Melt and recast the dataframe so that the average of each variable for each 
