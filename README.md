@@ -1,6 +1,7 @@
 ## Setup
-Download and _unzip_ the file located at https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip 
-to the same folder as this script (run_analysis.R)
+This script (run_analysis.R) is self-contained and can be run from anywhere. 
+However, you can download and unzip the file from https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip 
+to the /data subfolder where this script (run_analysis.R) is run.
 
 ## Function and Output of Script
 Running the script will:
@@ -11,4 +12,4 @@ Running the script will:
 4. modifies the variable names to make them slightly more readable
    * a dataframe called tidy_data remains in memory
 5. creates a new data frame for the with the average of each variable for each activity and each subject
-   * This step creates the actual output. It writes the text file "_tidy dataset of variable means.txt_"
+   * This step creates the actual output. It writes the text file "tidy_file.csv""

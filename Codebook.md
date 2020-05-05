@@ -35,7 +35,7 @@ measured in rad/s
 4. Every signal has a measured and calculated variable
 * every signal has a _time domain_ component 
 * A Fast Fourier Transform(FFT) provides a _frequency domain_ calculation for some of the signals.
-5. * **Body** or **Gravity** indicates the nature of the movement (personal motion or motion induced by gravity)
+5. **Body** or **Gravity** indicates the nature of the movement (personal motion or motion induced by gravity)
 6. **X**, **Y**, and **Z** indicate the cartesian direction of the variable.
 7. **jerk** is the rate of change of acceleration
 8. **magnitude** is the magnitude of the movement
@@ -59,11 +59,11 @@ Time/Frequency - Body/Gravity - Accelerometer/Gyroscope - measure - Mean/Standar
   _activity_lables_ into the _data_ by using the **activity_code** as the 
   primary key.
 10. Update all of the variables so that they are human readible.
-** Add spaces.
-** Expand on the shortened terms or acronymns
-** Change the leading character to:
-*** t = Time domain
-*** f = Fast Fourier Transform (frequency domain)
+ ** Add spaces.
+ ** Expand on the shortened terms or acronymns
+ ** Change the leading character to:
+ *** t = Time domain
+ *** f = Fast Fourier Transform (frequency domain)
 
 ## Summary Data
 Melt and recast the dataframe so that the average of each variable for each 
