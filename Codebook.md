@@ -29,12 +29,12 @@ The resulting variables are formatted as such:
 1. **subject** - the first variable is the subject's number - no names are used, this is a unique identifier
 2. **activity** - this variable is the activity the subject was performing at the time of the observation
 3. The remaining variables are signals from:
-* _Accelerometers_ tracking 3-axial linear acceleration (in the x, y, and z directions) measured in "G's" (gravity of earth ->  9.80665 m/s^2)
-* _Gyroscopes_ tracking 3-axial angular velocity (in the x, y, and z directions)
+ * _Accelerometers_ tracking 3-axial linear acceleration (in the x, y, and z directions) measured in "G's" (gravity of earth ->  9.80665 m/s^2)
+ * _Gyroscopes_ tracking 3-axial angular velocity (in the x, y, and z directions)
 measured in rad/s
 4. Every signal has a measured and calculated variable
-* every signal has a _time domain_ component 
-* A Fast Fourier Transform(FFT) provides a _frequency domain_ calculation for some of the signals.
+ * every signal has a _time domain_ component 
+ * A Fast Fourier Transform(FFT) provides a _frequency domain_ calculation for some of the signals.
 5. **Body** or **Gravity** indicates the nature of the movement (personal motion or motion induced by gravity)
 6. **X**, **Y**, and **Z** indicate the cartesian direction of the variable.
 7. **jerk** is the rate of change of acceleration
