@@ -12,7 +12,7 @@ Running the script will:
 4. modifies the variable names to make them slightly more readable
    * a dataframe called tidy_data remains in memory
 5. creates a new data frame for the with the average of each variable for each activity and each subject
-   * This step creates the actual output. It writes the text file "tidy_file.csv"
+   * This step creates the actual output. It writes the text file "tidy_file.txt"
    
 ## Codebook.md
 The codebook provides a description of the methodology used and description of 

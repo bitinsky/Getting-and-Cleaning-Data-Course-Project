@@ -111,4 +111,5 @@ names(data)<-gsub("Jerk", "Jerk ", names(data))
 tidy_means <- dcast(melt(data, id = c("subject","activity")), 
                     subject + activity ~ variable, fun.aggregate = mean)
 
-write.csv(tidy_means, "tidy_file.csv", row.names = FALSE)
+#write.csv(tidy_means, "tidy_file.csv", row.names = FALSE)
+write.table(tidy_means, file = "tidy_file.txt", row.names=FALSE)
