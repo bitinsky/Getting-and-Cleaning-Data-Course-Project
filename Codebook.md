@@ -70,5 +70,5 @@ Melt and recast the dataframe so that the average of each variable for each
 activity and each subject is calculated.
 
 Create a text file with this data using write.table(), using row.name=FALSE, 
-called  _tidy_file.txt_
+called  _tidy_summary_output.txt.txt_
 

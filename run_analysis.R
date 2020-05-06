@@ -11,7 +11,7 @@ library("data.table")
 ifelse(!dir.exists(file.path("data")), dir.create(file.path("data")), "Folder already exists")
 
 url <- "https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip"
-destfile="./data/Dataset.zip" 
+destfile <- "./data/Dataset.zip" 
  
 if (!file.exists(destfile)) {
   download.file(url ,destfile,method="auto") 
@@ -63,7 +63,7 @@ names(data) <- as.character(features$feature_name)
 data <- cbind(subjects, activities, data)
  
 # cleanup the environment
-rm(features, subjects, activities, destfile, dir, test_dir, train_dir, url, destfile)
+rm(features, subjects, activities, destfile, dir, test_dir, train_dir, url)
 
 
 ##############################################################################
@@ -111,5 +111,4 @@ names(data)<-gsub("Jerk", "Jerk ", names(data))
 tidy_means <- dcast(melt(data, id = c("subject","activity")), 
                     subject + activity ~ variable, fun.aggregate = mean)
 
-#write.csv(tidy_means, "tidy_file.csv", row.names = FALSE)
-write.table(tidy_means, file = "tidy_file.txt", row.names=FALSE)
+write.table(tidy_means, file = "tidy_summary_output.txt", row.names=FALSE)
